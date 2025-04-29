@@ -17,6 +17,7 @@
         <br>
         <h3 class="text-center mb-4">Tinkercad:</h3>
         <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
         <h4>Kood:</h4>
         <pre><code class="language-arduino">
             #include &lt;Servo.h&gt; // Lisame Servo teegi, et saaks mootorit juhtida
@@ -33,42 +34,42 @@
             int currentButton2State;
 
             void setup() {
-            Serial.begin(9600); // Serialühendus, et saaksime Serial Monitori kasutada
+                Serial.begin(9600); // Serialühendus, et saaksime Serial Monitori kasutada
 
-            pinMode(BUTTON1_PIN, INPUT_PULLUP);
-            pinMode(BUTTON2_PIN, INPUT_PULLUP);
+                pinMode(BUTTON1_PIN, INPUT_PULLUP);
+                pinMode(BUTTON2_PIN, INPUT_PULLUP);
 
-            servo.attach(SERVO_PIN); // Ühendame servo pordiga
+                servo.attach(SERVO_PIN); // Ühendame servo pordiga
 
-            // Loeme esialgse nupuseisu
-            currentButton1State = digitalRead(BUTTON1_PIN);
-            currentButton2State = digitalRead(BUTTON2_PIN);
+                // Loeme esialgse nupuseisu
+                currentButton1State = digitalRead(BUTTON1_PIN);
+                currentButton2State = digitalRead(BUTTON2_PIN);
             }
 
             void loop() {
-            // Salvestame eelmise ja loeme uue nupu 1 seisu
-            lastButton1State = currentButton1State;
-            currentButton1State = digitalRead(BUTTON1_PIN);
+                // Salvestame eelmise ja loeme uue nupu 1 seisu
+                lastButton1State = currentButton1State;
+                currentButton1State = digitalRead(BUTTON1_PIN);
 
-            // Salvestame eelmise ja loeme uue nupu 2 seisu
-            lastButton2State = currentButton2State;
-            currentButton2State = digitalRead(BUTTON2_PIN);
+                // Salvestame eelmise ja loeme uue nupu 2 seisu
+                lastButton2State = currentButton2State;
+                currentButton2State = digitalRead(BUTTON2_PIN);
 
-            // Kui nupp 1 vajutatakse (päripäeva)
-            if (lastButton1State == HIGH && currentButton1State == LOW) {
-                Serial.println("Paripaeva 360 kraadi");
-                servo.write(0);      // Täiskiirus päripäeva (0)
-                delay(1000);         // Ootame umbes 1 sekund (360° pöörde aeg)
-                servo.write(90);     // Peatame mootori
-            }
+                // Kui nupp 1 vajutatakse (päripäeva)
+                if (lastButton1State == HIGH && currentButton1State == LOW) {
+                    Serial.println("Paripaeva 360 kraadi");
+                    servo.write(0);      // Täiskiirus päripäeva (0)
+                    delay(1000);         // Ootame umbes 1 sekund (360° pöörde aeg)
+                    servo.write(90);     // Peatame mootori
+                }
 
-            // Kui nupp 2 vajutatakse (vastupäeva)
-            if (lastButton2State == HIGH && currentButton2State == LOW) {
-                Serial.println("Vastupaeva 360 kraadi");
-                servo.write(180);    // Vastupäeva (180)
-                delay(1000);         // Ootame umbes 1 sekund (360° pöörde aeg)
-                servo.write(90);     // Peatame mootori
-            }
+                // Kui nupp 2 vajutatakse (vastupäeva)
+                if (lastButton2State == HIGH && currentButton2State == LOW) {
+                    Serial.println("Vastupaeva 360 kraadi");
+                    servo.write(180);    // Vastupäeva (180)
+                    delay(1000);         // Ootame umbes 1 sekund (360° pöörde aeg)
+                    servo.write(90);     // Peatame mootori
+                }
             }
         </code></pre>
         <br>
