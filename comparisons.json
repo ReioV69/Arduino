@@ -1,0 +1,135 @@
+[
+    {
+        "title": "Male Header Pins",
+        "realImage": "paris/Maleheaderpins.jpg",
+        "digitalImage": "digital/Maleheaderpins.jpg",
+        "description": "Metallist pinnid seadmete ühendamiseks.",
+        "classes": "comparison-container content"
+    },
+    {
+        "title": "Potentsiomeeter",
+        "realImage": "paris/Potentiometer.png",
+        "digitalImage": "digital/Potentiometer.png",
+        "description": "Reguleeritav takisti, mida saab keerata.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Servomootor",
+        "realImage": "paris/Servo.png",
+        "digitalImage": "digital/Servo.png",
+        "description": "Täpselt liikumist reguleeriv mootor.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Takistid",
+        "realImage": "paris/Resistors.jpg",
+        "digitalImage": "digital/Resistor.png",
+        "description": "Piiravad elektrivoolu, et seadmed töötaksid õigesti.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Lüliti",
+        "realImage": "paris/Switch.jpg",
+        "digitalImage": "digital/Switch.png",
+        "description": "Muudab voolu vooluringis sisse või välja.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Juhtmed",
+        "realImage": "paris/juhtmed.jpg",
+        "digitalImage": "digital/Juhtmed.png",
+        "description": "Saab ühendada erinevaid seadmeid voolu juhtmiseks.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Alalisvoolumootor",
+        "realImage": "paris/DCmotor.jpg",
+        "digitalImage": "digital/DCMotor.png",
+        "description": "Mootor, mis töötab alalisvooluga.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Aku klamber",
+        "realImage": "paris/BatterySnap.jpg",
+        "digitalImage": "digital/BatterySnap.png",
+        "description": "Hoidab akud kindlalt paigal ja ühendab need seadmetega.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Aku",
+        "realImage": "paris/Battery.jpg",
+        "digitalImage": "digital/Battery.png",
+        "description": "Salvestab ja annab elektrit edasi seadmetele.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Diood",
+        "realImage": "paris/Diode.jpg",
+        "digitalImage": "digital/Diode.png",
+        "description": "Komponent, mis laseb elektril liikuda ainult ühes suunas.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "RGB LED",
+        "realImage": "paris/LEDRGB.jpg",
+        "digitalImage": "digital/LEDRGB.png",
+        "description": "Värviline LED-tuli, mis muudab värve (punane, roheline, sinine).",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Arduino",
+        "realImage": "paris/Arduino.jpg",
+        "digitalImage": "digital/Arduino.png",
+        "description": "Arduino - See on süda su projektides.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Breadboard",
+        "realImage": "paris/Breadboard.jpg",
+        "digitalImage": "digital/Breadboard.png",
+        "description": "Plaat, kuhu saad elektroonika komponente paigutada ja ühendada.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Fototakisti",
+        "realImage": "paris/Photoresistor.jpg",
+        "digitalImage": "digital/Photoresistor.png",
+        "description": "Muudab takistust sõltuvalt valgustusest.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Optokoppeler",
+        "realImage": "paris/Optocoupler.jpg",
+        "digitalImage": "digital/Optocoupler.png",
+        "description": "Kannab signaale ilma elektrit otse juhtimata.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Kondensaator",
+        "realImage": "paris/Capacitor.jpg",
+        "digitalImage": "digital/Capacitors.png",
+        "description": "Salvestab elektrit ja aitab tasakaalustada voolu.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "Piezo",
+        "realImage": "paris/piezo.jpg",
+        "digitalImage": "digital/Piezo.png",
+        "description": "Muudab liikumise elektriks või vastupidi.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "H-sild",
+        "realImage": "paris/H-bridge.jpg",
+        "digitalImage": "digital/H-bridge.png",
+        "description": "Kontrollib mootori liikumist edasi-tagasi.",
+        "classes": "comparison-container"
+    },
+    {
+        "title": "LCD-ekraan",
+        "realImage": "paris/LCDscreen.jpg",
+        "digitalImage": "digital/LCDscreen.png",
+        "description": "Ekraan, mis kuvab teksti ja pilte.",
+        "classes": "comparison-container"
+    }
+]

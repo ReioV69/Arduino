@@ -1,9 +1,44 @@
 body {
   background: linear-gradient(to bottom, 
-  #1a2a6c 0%, 
-  #8a2c8a 50%,   /* Midpoint blend (purple) */
-  #1a2a6c 100%
+  #e7c0f3 0%, 
+  #43a2f0 30%, 
+  #e7c0f3 100%
 );
   margin: 0;
   height: 100vh;
+}
+.comparison-container {
+  margin-bottom: 40px;
+}
+.image-card {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-label {
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+.description {
+  padding: 10px 0;
+  font-size: 0.95rem;
+}
+.add-btn-container {
+  margin: 30px 0;
+}
+.content {
+position: relative;
+z-index: 1;
+color: white;
+text-align: center;
+padding-top: 50px;
 }
