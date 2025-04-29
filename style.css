@@ -3,7 +3,7 @@ body {
   #e7c0f3 0%, 
   #43a2f0 30%, 
   #e7c0f3 100%
-);
+) !important;
   margin: 0;
   height: 100vh;
 }
