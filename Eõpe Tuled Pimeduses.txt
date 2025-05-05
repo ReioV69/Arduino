@@ -1,5 +1,6 @@
 Kasutasin seda juhendit: https://www.instructables.com/Light-Sensor-Photoresistor-Arduino-Tinkercad/
 Koodi jaoks kasutasin AI'd
+Minu oma: https://www.tinkercad.com/things/4JKXubMUSYZ-tuled-pimeduses-eoppenadal/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
 
 // Defineerime pin-id
 const int ldrPin = A0; // Fototakisti on ühendatud analoogsisendisse A0
