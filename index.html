@@ -75,7 +75,136 @@
         <br>
         <h3 class="text-center mb-4">Allikad:</h3>
         <h5>Projekti alus: <a href="https://arduinogetstarted.com/tutorials/arduino-button-servo-motor">https://arduinogetstarted.com/tutorials/arduino-button-servo-motor</a></h5>
-        <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas™©</a></h5> 
+        <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas ™©</a></h5> 
+    
+        <!--Ülesanded-->
+        <h1 class="text-center mb-4">Keimo Plaas Ülesanded: 6, 5, 4, 16, 15, 14, 26, 25, 24</h1>
+        <hr>
+        <h2 class="text-center mb-4">Saan läbi Serial Monitor konsooli lülitada valgust sisse-välja. - Ül 6</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/ul6.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/2KeYvEreRqC/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=dazWFEN6ysW405_TvDfg-9FGbpQ-htJfM6O_VbYQ5ck">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                int ledPin = 13; 
+                String inputString = "";  
+
+                void setup() {
+                pinMode(ledPin, OUTPUT);
+                Serial.begin(9600); 
+                Serial.println("Sisesta 'on' voi 'off' ja vajuta Enter:");
+                }
+
+                void loop() {
+                if (Serial.available()) {
+                    inputString = Serial.readStringUntil('\n');  
+                    inputString.trim();  
+
+                    if (inputString.equalsIgnoreCase("on")) {
+                    digitalWrite(ledPin, HIGH);
+                    Serial.println("LED on sisse lulitatud.");
+                    }
+                    else if (inputString.equalsIgnoreCase("off")) {
+                    digitalWrite(ledPin, LOW);
+                    Serial.println("LED on valja lulitatud.");
+                    }
+                    else {
+                    Serial.println("Tundmatu kask. Kasuta 'on' voi 'off'.");
+                    }
+                }
+                }
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 5</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4">- Ül 4</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 16</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 15</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 14</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 26</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 25</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        <hr>
+        <h2 class="text-center mb-4"> - Ül 24</h2>
+            <br>
+            <h3 class="text-center mb-4">Tinkercad:</h3>
+            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <h4>Kood:</h4>
+            <pre><code class="language-arduino">
+                Kood siia
+            </code></pre>
+            <br>
+        </div>
     </div>
 
         <div class="container py-4 text-white">
