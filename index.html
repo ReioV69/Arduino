@@ -629,7 +629,7 @@
         <h2 class="text-center mb-4">Kontrolli potentsiomeetri abiga LED vilkumise kiirust. Kuva info ka Serial Monitoris - Ül 14</h2>
             <br>
             <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <img src="tinkercad/ul14.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
             <h4>Tinkercad <a href="https://www.tinkercad.com/things/lzGnNSbROYK/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=FkcVl71fTM3qPCfxm3mFBtEGq3yrAb6oQZxZ9EPazic">link</a></h4>
             <h4>Kood:</h4>
             <pre><code class="language-arduino">
@@ -662,11 +662,82 @@
         <h2 class="text-center mb-4"> - Ül 26</h2>
             <br>
             <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+            <img src="tinkercad/ul26.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+            <h4>Tinkercad <a href="https://www.tinkercad.com/things/emx0ftlwXd7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=K4fKAz6d_ktyyfLuFCIibaTeVxuLIapddiwL1tcXmAI">link</a></h4>
             <h4>Kood:</h4>
             <pre><code class="language-arduino">
-                Kood siia
+                #include <ESP8266WiFi.h>  // Kui kasutad ESP8266
+                    //#include <WiFi.h>          // Kui kasutad ESP32
+                    #include <ESP8266WebServer.h> // Kui kasutad ESP8266
+                    //#include <WebServer.h>      // Kui kasutad ESP32
+                    
+                    const char* ssid = "your_SSID";       // Wi-Fi nimi
+                    const char* password = "your_PASSWORD"; // Wi-Fi parool
+                    
+                    ESP8266WebServer server(80);  // Serveri loomine ESP8266 jaoks (või ESP32 puhul WebServer)
+                    
+                    const int ledPin1 = D1;  // LED1 jaoks pin
+                    const int ledPin2 = D2;  // LED2 jaoks pin
+                    
+                    void setup() {
+                      // Alustame seeriaväljastust ja Wi-Fi ühendust
+                      Serial.begin(115200);
+                      WiFi.begin(ssid, password);
+                    
+                      // Ootame, kuni Wi-Fi ühendus on loodud
+                      while (WiFi.status() != WL_CONNECTED) {
+                        delay(1000);
+                        Serial.println("Ühendatakse Wi-Fi-ga...");
+                      }
+                    
+                      Serial.println("Ühendus loodud!");
+                      Serial.print("IP aadress: ");
+                      Serial.println(WiFi.localIP());
+                    
+                      // LEDide pin'ide seadistamine
+                      pinMode(ledPin1, OUTPUT);
+                      pinMode(ledPin2, OUTPUT);
+                    
+                      // Defineerime veebiserveri lingid
+                      server.on("/", HTTP_GET, []() {
+                        String html = "<html><body><h1>LED Kontroll</h1>";
+                        html += "<p><a href=\"/led1/on\">LED1 ON</a></p>";
+                        html += "<p><a href=\"/led1/off\">LED1 OFF</a></p>";
+                        html += "<p><a href=\"/led2/on\">LED2 ON</a></p>";
+                        html += "<p><a href=\"/led2/off\">LED2 OFF</a></p>";
+                        html += "</body></html>";
+                        server.send(200, "text/html", html);
+                      });
+                    
+                      server.on("/led1/on", HTTP_GET, []() {
+                        digitalWrite(ledPin1, HIGH);
+                        server.sendHeader("Location", "/");
+                        server.send(303);
+                      });
+                    
+                      server.on("/led1/off", HTTP_GET, []() {
+                        digitalWrite(ledPin1, LOW);
+                        server.sendHeader("Location", "/");
+                        server.send(303);
+                      });
+                    
+                      server.on("/led2/on", HTTP_GET, []() {
+                        digitalWrite(ledPin2, HIGH);
+                        server.sendHeader("Location", "/");
+                        server.send(303);
+                      });
+                    
+                      server.on("/led2/off", HTTP_GET, []() {
+                        digitalWrite(ledPin2, LOW);
+                        server.sendHeader("Location", "/");
+                        server.send(303);
+                      });
+                      server.begin();
+                    }
+                    
+                    void loop() {
+                      server.handleClient(); 
+                    }
             </code></pre>
             <br>
         <hr>
