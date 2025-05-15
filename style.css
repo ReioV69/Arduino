@@ -9,14 +9,11 @@ body {
 .accordion {
   cursor: pointer;
   padding: 10px;
-  border: 1px solid #ccc;
   margin-bottom: 5px;
-  background: #eee;
 }
 .panel {
   display: none; /* hidden by default */
   padding: 10px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
