@@ -2,28 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real vs Digital Comparison</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real vs Digital Comparison</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container py-4 text-white">
-        <h1 class="text-center mb-4">Keimo Asjade Internet ja robootika</h1>
-        <hr>
-        <br>
-        <h2 class="text-center mb-4">Koduõppe nädal Servo 360 mootor kontroll nuppude abil</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+  <div class="container py-4 text-white">
+    <h1 class="text-center mb-4">Keimo Asjade Internet ja robootika</h1>
+    <hr>
+    <br>
+    <h2 class="text-center mb-4">Koduõppe nädal Servo 360 mootor kontroll nuppude abil</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
             #include &lt;Servo.h&gt; // Lisame Servo teegi, et saaks mootorit juhtida
 
             const int BUTTON1_PIN = 6; // Nupp 1 (päripäeva)
@@ -75,25 +85,39 @@
                     servo.write(90);     // Peatame mootori
                 }
             }
-        </code></pre>
-        <br>
-        <h3 class="text-center mb-4">Allikad:</h3>
-        <h5>Projekti alus: <a
-                href="https://arduinogetstarted.com/tutorials/arduino-button-servo-motor">https://arduinogetstarted.com/tutorials/arduino-button-servo-motor</a>
-        </h5>
-        <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas ™©</a></h5>
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+    <br>
+    <h3 class="text-center mb-4">Allikad:</h3>
+    <h5>Projekti alus: <a
+        href="https://arduinogetstarted.com/tutorials/arduino-button-servo-motor">https://arduinogetstarted.com/tutorials/arduino-button-servo-motor</a>
+    </h5>
+    <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas ™©</a></h5>
 
-        <!--Ülesanded-->
-        <h1 class="text-center mb-4">Keimo Plaas Ülesanded: 6, 5, 4, 16, 15, 14, 26, 25, 24</h1>
-        <hr>
-        <h2 class="text-center mb-4">Saan läbi Serial Monitor konsooli lülitada valgust sisse-välja. - Ül 6</h2>
-        <br>
-        <img src="tinkercad/ul6.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/2KeYvEreRqC/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=dazWFEN6ysW405_TvDfg-9FGbpQ-htJfM6O_VbYQ5ck">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+    <!--Ülesanded-->
+    <h1 class="text-center mb-4">Keimo Plaas Ülesanded: 6, 5, 4, 16, 15, 14, 26, 25, 24</h1>
+    <hr>
+    <h2 class="text-center mb-4">Saan läbi Serial Monitor konsooli lülitada valgust sisse-välja. - Ül 6</h2>
+    <br>
+    <img src="tinkercad/ul6.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/2KeYvEreRqC/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=dazWFEN6ysW405_TvDfg-9FGbpQ-htJfM6O_VbYQ5ck">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 int ledPin = 13; 
                 String inputString = "";  
 
@@ -121,17 +145,31 @@
                         }
                     }
                 }
-            </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">LED’id kuvavad helitugevust (1 led nõrk->3 led’i vali) - Ül 5</h2>
-        <br>
-        <img src="tinkercad/ul5.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/jnXdyXi0Ps5/editel?returnTo=%2Fdashboard%2Fdesigns%2F3d&sharecode=lXZ0vZynM6MNsDSO8XxUptnGj5SmS1NLVrZIdxh9ObI">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">LED’id kuvavad helitugevust (1 led nõrk->3 led’i vali) - Ül 5</h2>
+    <br>
+    <img src="tinkercad/ul5.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/jnXdyXi0Ps5/editel?returnTo=%2Fdashboard%2Fdesigns%2F3d&sharecode=lXZ0vZynM6MNsDSO8XxUptnGj5SmS1NLVrZIdxh9ObI">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 int micPin = A0;
                 int led1 = 2;
                 int led2 = 3;
@@ -164,18 +202,32 @@
 
                     delay(100);
                 }
-            </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">Tuled süttivad, kui läheb pimedaks. Väljasta Serial Monitorile tekst, kas on pime
-            või valge - Ül 4</h2>
-        <br>
-        <img src="tinkercad/ul4.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/3RGDcWF3MS8-tuled-suttivad-kui-laheb-pimedaks-valjasta-serial-monitorile/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Dg3XABZFEg0HGX379xW32GCxsoiaExvefy4YEVdFR04">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">Tuled süttivad, kui läheb pimedaks. Väljasta Serial Monitorile tekst, kas on pime
+      või valge - Ül 4</h2>
+    <br>
+    <img src="tinkercad/ul4.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/3RGDcWF3MS8-tuled-suttivad-kui-laheb-pimedaks-valjasta-serial-monitorile/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Dg3XABZFEg0HGX379xW32GCxsoiaExvefy4YEVdFR04">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 int ldrPin = A0;    
                 int ledPin = 2;   
                 int threshold = 500;
@@ -201,18 +253,32 @@
 
                 delay(500);
                 }
-            </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">LCD ekraanil kuvatakse mootori kiirus või suund. - Ül 16</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/ul16.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/bTOxi9SWmvo/editel?sharecode=txuT1oyf5OYp95c5Fo0-vm6g1NwLk92KH6Eqwm1sBR8">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">LCD ekraanil kuvatakse mootori kiirus või suund. - Ül 16</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/ul16.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/bTOxi9SWmvo/editel?sharecode=txuT1oyf5OYp95c5Fo0-vm6g1NwLk92KH6Eqwm1sBR8">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 #include <LiquidCrystal.h>               				    
                     const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2; 
                     LiquidCrystal lcd(rs, en, d4, d5, d6, d7);                  
@@ -385,28 +451,33 @@
                         }
                       }
                     }                          
-            </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">Arduino mängib laulu “Super Mario” ja vilgutab tulesid. Kuva info ka Serial
-            Monitoris - Ül 15</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/ul15.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/24nCqbg4qLO/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=rrvXvX_blFTm2qiiZKFddLU3K_9-cGitmTEPrdV5I6I">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Kood
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <pre><code class="language-arduino">
+                  </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">Arduino mängib laulu “Super Mario” ja vilgutab tulesid. Kuva info ka Serial
+      Monitoris - Ül 15</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/ul15.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/24nCqbg4qLO/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=rrvXvX_blFTm2qiiZKFddLU3K_9-cGitmTEPrdV5I6I">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                         // --- Notes definition ---
                         #define NOTE_B0  31
                         #define NOTE_C1  33
@@ -651,23 +722,32 @@
                         digitalWrite(13, LOW);
                         }
                     </code></pre>
-                </div>
-              </div>
-            </div>
-            </div>
           </div>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">Kontrolli potentsiomeetri abiga LED vilkumise kiirust. Kuva info ka Serial
-            Monitoris - Ül 14</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/ul14.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/lzGnNSbROYK/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=FkcVl71fTM3qPCfxm3mFBtEGq3yrAb6oQZxZ9EPazic">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">Kontrolli potentsiomeetri abiga LED vilkumise kiirust. Kuva info ka Serial
+      Monitoris - Ül 14</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/ul14.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/lzGnNSbROYK/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=FkcVl71fTM3qPCfxm3mFBtEGq3yrAb6oQZxZ9EPazic">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 const int ledPin = 13;
                 const int potPin = A0;
                 int potValue = 0;
@@ -691,103 +771,133 @@
                     digitalWrite(ledPin, LOW);
                     delay(blinkDelay);
                 }
-            </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4"> - Ül 26</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/ul26.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/emx0ftlwXd7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=K4fKAz6d_ktyyfLuFCIibaTeVxuLIapddiwL1tcXmAI">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+              </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4"> - Ül 26</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/ul26.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/emx0ftlwXd7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=K4fKAz6d_ktyyfLuFCIibaTeVxuLIapddiwL1tcXmAI">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 #include <ESP8266WiFi.h>  // Kui kasutad ESP8266
-                    //#include <WiFi.h>          // Kui kasutad ESP32
-                    #include <ESP8266WebServer.h> // Kui kasutad ESP8266
-                    //#include <WebServer.h>      // Kui kasutad ESP32
-                    
-                    const char* ssid = "your_SSID";       // Wi-Fi nimi
-                    const char* password = "your_PASSWORD"; // Wi-Fi parool
-                    
-                    ESP8266WebServer server(80);  // Serveri loomine ESP8266 jaoks (või ESP32 puhul WebServer)
-                    
-                    const int ledPin1 = D1;  // LED1 jaoks pin
-                    const int ledPin2 = D2;  // LED2 jaoks pin
-                    
-                    void setup() {
-                      // Alustame seeriaväljastust ja Wi-Fi ühendust
-                      Serial.begin(115200);
-                      WiFi.begin(ssid, password);
-                    
-                      // Ootame, kuni Wi-Fi ühendus on loodud
-                      while (WiFi.status() != WL_CONNECTED) {
-                        delay(1000);
-                        Serial.println("Ühendatakse Wi-Fi-ga...");
-                      }
-                    
-                      Serial.println("Ühendus loodud!");
-                      Serial.print("IP aadress: ");
-                      Serial.println(WiFi.localIP());
-                    
-                      // LEDide pin'ide seadistamine
-                      pinMode(ledPin1, OUTPUT);
-                      pinMode(ledPin2, OUTPUT);
-                    
-                      // Defineerime veebiserveri lingid
-                      server.on("/", HTTP_GET, []() {
-                        String html = "<html><body><h1>LED Kontroll</h1>";
-                        html += "<p><a href=\"/led1/on\">LED1 ON</a></p>";
-                        html += "<p><a href=\"/led1/off\">LED1 OFF</a></p>";
-                        html += "<p><a href=\"/led2/on\">LED2 ON</a></p>";
-                        html += "<p><a href=\"/led2/off\">LED2 OFF</a></p>";
-                        html += "</body></html>";
-                        server.send(200, "text/html", html);
-                      });
-                    
-                      server.on("/led1/on", HTTP_GET, []() {
-                        digitalWrite(ledPin1, HIGH);
-                        server.sendHeader("Location", "/");
-                        server.send(303);
-                      });
-                    
-                      server.on("/led1/off", HTTP_GET, []() {
-                        digitalWrite(ledPin1, LOW);
-                        server.sendHeader("Location", "/");
-                        server.send(303);
-                      });
-                    
-                      server.on("/led2/on", HTTP_GET, []() {
-                        digitalWrite(ledPin2, HIGH);
-                        server.sendHeader("Location", "/");
-                        server.send(303);
-                      });
-                    
-                      server.on("/led2/off", HTTP_GET, []() {
-                        digitalWrite(ledPin2, LOW);
-                        server.sendHeader("Location", "/");
-                        server.send(303);
-                      });
-                      server.begin();
-                    }
-                    
-                    void loop() {
-                      server.handleClient(); 
-                    }
+                //#include <WiFi.h>          // Kui kasutad ESP32
+                #include <ESP8266WebServer.h> // Kui kasutad ESP8266
+                //#include <WebServer.h>      // Kui kasutad ESP32
+                
+                const char* ssid = "your_SSID";       // Wi-Fi nimi
+                const char* password = "your_PASSWORD"; // Wi-Fi parool
+                
+                ESP8266WebServer server(80);  // Serveri loomine ESP8266 jaoks (või ESP32 puhul WebServer)
+                
+                const int ledPin1 = D1;  // LED1 jaoks pin
+                const int ledPin2 = D2;  // LED2 jaoks pin
+                
+                void setup() {
+                  // Alustame seeriaväljastust ja Wi-Fi ühendust
+                  Serial.begin(115200);
+                  WiFi.begin(ssid, password);
+                
+                  // Ootame, kuni Wi-Fi ühendus on loodud
+                  while (WiFi.status() != WL_CONNECTED) {
+                    delay(1000);
+                    Serial.println("Ühendatakse Wi-Fi-ga...");
+                  }
+                
+                  Serial.println("Ühendus loodud!");
+                  Serial.print("IP aadress: ");
+                  Serial.println(WiFi.localIP());
+                
+                  // LEDide pin'ide seadistamine
+                  pinMode(ledPin1, OUTPUT);
+                  pinMode(ledPin2, OUTPUT);
+                
+                  // Defineerime veebiserveri lingid
+                  server.on("/", HTTP_GET, []() {
+                    String html = "<html><body><h1>LED Kontroll</h1>";
+                    html += "<p><a href=\"/led1/on\">LED1 ON</a></p>";
+                    html += "<p><a href=\"/led1/off\">LED1 OFF</a></p>";
+                    html += "<p><a href=\"/led2/on\">LED2 ON</a></p>";
+                    html += "<p><a href=\"/led2/off\">LED2 OFF</a></p>";
+                    html += "</body></html>";
+                    server.send(200, "text/html", html);
+                  });
+                
+                  server.on("/led1/on", HTTP_GET, []() {
+                    digitalWrite(ledPin1, HIGH);
+                    server.sendHeader("Location", "/");
+                    server.send(303);
+                  });
+                
+                  server.on("/led1/off", HTTP_GET, []() {
+                    digitalWrite(ledPin1, LOW);
+                    server.sendHeader("Location", "/");
+                    server.send(303);
+                  });
+                
+                  server.on("/led2/on", HTTP_GET, []() {
+                    digitalWrite(ledPin2, HIGH);
+                    server.sendHeader("Location", "/");
+                    server.send(303);
+                  });
+                
+                  server.on("/led2/off", HTTP_GET, []() {
+                    digitalWrite(ledPin2, LOW);
+                    server.sendHeader("Location", "/");
+                    server.send(303);
+                  });
+                  server.begin();
+                }
+                
+                void loop() {
+                  server.handleClient(); 
+                }
             </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">Arduino mõõdab veetaset ja annab märku LED abil. Kuva info ka Serial Monitoris. -
-            Ül 25</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/ul25.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a
-                href="https://www.tinkercad.com/things/cMUvXErmPPH/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=buwKw_wFMGgM_phjiPyWilHEQRFY6kNzPhDWrrp9GbI">link</a>
-        </h4>
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">Arduino mõõdab veetaset ja annab märku LED abil. Kuva info ka Serial
+      Monitoris.
+      -
+      Ül 25</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/ul25.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <h4>Tinkercad <a
+        href="https://www.tinkercad.com/things/cMUvXErmPPH/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=buwKw_wFMGgM_phjiPyWilHEQRFY6kNzPhDWrrp9GbI">link</a>
+    </h4>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
             int sensorPin = A0;       // Veetasemeandur (potentsiomeeter)
             int ledPin = 8;           // LED pin
             int waterLevel = 0;       // Muutuja anduri väärtuseks
@@ -814,16 +924,31 @@
             
               delay(1000); // Oota 1 sekund
             }            
-            </code></pre>
-        <br>
-        <hr>
-        <h2 class="text-center mb-4">Tutvu lasermooduliga ja pane see tööle, et see teeks midagi (NB! laser kahjustab
-            silma). Kuva info ka Serial Monitoris. - Ül 24</h2>
-        <br>
-        <h3 class="text-center mb-4">Tinkercad:</h3>
-        <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Kood:</h4>
-        <pre><code class="language-arduino">
+          </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 class="text-center mb-4">Tutvu lasermooduliga ja pane see tööle, et see teeks midagi (NB! laser
+      kahjustab
+      silma). Kuva info ka Serial Monitoris. - Ül 24</h2>
+    <br>
+    <h3 class="text-center mb-4">Tinkercad:</h3>
+    <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Kood
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <pre><code class="language-arduino">
                 int laserPin = 8; // Laser IN ühendatud D8 külge
 
                 void setup() {
@@ -841,26 +966,30 @@
                 Serial.println("Laser väljas!");
                 delay(2000);                  // Hoia väljas 2 sekundit
                 }
-            </code></pre>
-        <br>
+              </code></pre>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
+    <br>
+  </div>
+  </div>
 
-    <div class="container py-4 text-white">
-        <hr>
-        <h2 class="text-center mb-4">Päris vs Digitaalne võrdlus</h2>
-        <div id="comparisons-container"></div>
-    </div>
+  <div class="container py-4 text-white">
+    <hr>
+    <h2 class="text-center mb-4">Päris vs Digitaalne võrdlus</h2>
+    <div id="comparisons-container"></div>
+  </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            fetch('comparisons.json')
-                .then(response => response.json())
-                .then(data => {
-                    const container = document.getElementById('comparisons-container');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('comparisons.json')
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById('comparisons-container');
 
-                    data.forEach((item, index) => {
-                        const comparisonHTML = `
+          data.forEach((item, index) => {
+            const comparisonHTML = `
                             <div class="${item.classes}">
                                 <div class="row">
                                     <div class="h2 text-center">
@@ -887,18 +1016,18 @@
                             </div>
                             <hr>
                         `;
-                        container.insertAdjacentHTML('beforeend', comparisonHTML);
-                    });
-                })
-                .catch(error => console.error('Error loading comparisons:', error));
-        });
-    </script>
+            container.insertAdjacentHTML('beforeend', comparisonHTML);
+          });
+        })
+        .catch(error => console.error('Error loading comparisons:', error));
+    });
+  </script>
 
 
-    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
-    <script src="./script.js"></script>
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+  <script src="./script.js"></script>
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
