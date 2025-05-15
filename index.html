@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container py-4 text-white">
         <h1 class="text-center mb-4">Keimo Asjade Internet ja robootika</h1>
@@ -17,7 +19,9 @@
         <br>
         <h3 class="text-center mb-4">Tinkercad:</h3>
         <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-        <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a>
+        </h4>
         <h4>Kood:</h4>
         <pre><code class="language-arduino">
             #include &lt;Servo.h&gt; // Lisame Servo teegi, et saaks mootorit juhtida
@@ -74,18 +78,22 @@
         </code></pre>
         <br>
         <h3 class="text-center mb-4">Allikad:</h3>
-        <h5>Projekti alus: <a href="https://arduinogetstarted.com/tutorials/arduino-button-servo-motor">https://arduinogetstarted.com/tutorials/arduino-button-servo-motor</a></h5>
-        <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas ™©</a></h5> 
-    
+        <h5>Projekti alus: <a
+                href="https://arduinogetstarted.com/tutorials/arduino-button-servo-motor">https://arduinogetstarted.com/tutorials/arduino-button-servo-motor</a>
+        </h5>
+        <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas ™©</a></h5>
+
         <!--Ülesanded-->
         <h1 class="text-center mb-4">Keimo Plaas Ülesanded: 6, 5, 4, 16, 15, 14, 26, 25, 24</h1>
         <hr>
         <h2 class="text-center mb-4">Saan läbi Serial Monitor konsooli lülitada valgust sisse-välja. - Ül 6</h2>
-            <br>
-            <img src="tinkercad/ul6.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/2KeYvEreRqC/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=dazWFEN6ysW405_TvDfg-9FGbpQ-htJfM6O_VbYQ5ck">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <br>
+        <img src="tinkercad/ul6.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/2KeYvEreRqC/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=dazWFEN6ysW405_TvDfg-9FGbpQ-htJfM6O_VbYQ5ck">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 int ledPin = 13; 
                 String inputString = "";  
 
@@ -114,14 +122,16 @@
                     }
                 }
             </code></pre>
-            <br>
+        <br>
         <hr>
         <h2 class="text-center mb-4">LED’id kuvavad helitugevust (1 led nõrk->3 led’i vali) - Ül 5</h2>
-            <br>
-            <img src="tinkercad/ul5.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/jnXdyXi0Ps5/editel?returnTo=%2Fdashboard%2Fdesigns%2F3d&sharecode=lXZ0vZynM6MNsDSO8XxUptnGj5SmS1NLVrZIdxh9ObI">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <br>
+        <img src="tinkercad/ul5.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/jnXdyXi0Ps5/editel?returnTo=%2Fdashboard%2Fdesigns%2F3d&sharecode=lXZ0vZynM6MNsDSO8XxUptnGj5SmS1NLVrZIdxh9ObI">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 int micPin = A0;
                 int led1 = 2;
                 int led2 = 3;
@@ -155,14 +165,17 @@
                     delay(100);
                 }
             </code></pre>
-            <br>
+        <br>
         <hr>
-        <h2 class="text-center mb-4">Tuled süttivad, kui läheb pimedaks. Väljasta Serial Monitorile tekst, kas on pime või valge - Ül 4</h2>
-            <br>
-            <img src="tinkercad/ul4.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/3RGDcWF3MS8-tuled-suttivad-kui-laheb-pimedaks-valjasta-serial-monitorile/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Dg3XABZFEg0HGX379xW32GCxsoiaExvefy4YEVdFR04">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <h2 class="text-center mb-4">Tuled süttivad, kui läheb pimedaks. Väljasta Serial Monitorile tekst, kas on pime
+            või valge - Ül 4</h2>
+        <br>
+        <img src="tinkercad/ul4.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/3RGDcWF3MS8-tuled-suttivad-kui-laheb-pimedaks-valjasta-serial-monitorile/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=Dg3XABZFEg0HGX379xW32GCxsoiaExvefy4YEVdFR04">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 int ldrPin = A0;    
                 int ledPin = 2;   
                 int threshold = 500;
@@ -189,15 +202,17 @@
                 delay(500);
                 }
             </code></pre>
-            <br>
+        <br>
         <hr>
         <h2 class="text-center mb-4">LCD ekraanil kuvatakse mootori kiirus või suund. - Ül 16</h2>
-            <br>
-            <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/ul16.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/bTOxi9SWmvo/editel?sharecode=txuT1oyf5OYp95c5Fo0-vm6g1NwLk92KH6Eqwm1sBR8">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <br>
+        <h3 class="text-center mb-4">Tinkercad:</h3>
+        <img src="tinkercad/ul16.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/bTOxi9SWmvo/editel?sharecode=txuT1oyf5OYp95c5Fo0-vm6g1NwLk92KH6Eqwm1sBR8">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 #include <LiquidCrystal.h>               				    
                     const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2; 
                     LiquidCrystal lcd(rs, en, d4, d5, d6, d7);                  
@@ -371,15 +386,18 @@
                       }
                     }                          
             </code></pre>
-            <br>
+        <br>
         <hr>
-        <h2 class="text-center mb-4">Arduino mängib laulu “Super Mario” ja vilgutab tulesid. Kuva info ka Serial Monitoris - Ül 15</h2>
-            <br>
-            <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/ul15.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/24nCqbg4qLO/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=rrvXvX_blFTm2qiiZKFddLU3K_9-cGitmTEPrdV5I6I">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <h2 class="text-center mb-4">Arduino mängib laulu “Super Mario” ja vilgutab tulesid. Kuva info ka Serial
+            Monitoris - Ül 15</h2>
+        <br>
+        <h3 class="text-center mb-4">Tinkercad:</h3>
+        <img src="tinkercad/ul15.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/24nCqbg4qLO/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=rrvXvX_blFTm2qiiZKFddLU3K_9-cGitmTEPrdV5I6I">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 // --- Notes definition ---
                 #define NOTE_B0  31
                 #define NOTE_C1  33
@@ -624,15 +642,18 @@
                 digitalWrite(13, LOW);
                 }
             </code></pre>
-            <br>
+        <br>
         <hr>
-        <h2 class="text-center mb-4">Kontrolli potentsiomeetri abiga LED vilkumise kiirust. Kuva info ka Serial Monitoris - Ül 14</h2>
-            <br>
-            <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/ul14.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/lzGnNSbROYK/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=FkcVl71fTM3qPCfxm3mFBtEGq3yrAb6oQZxZ9EPazic">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <h2 class="text-center mb-4">Kontrolli potentsiomeetri abiga LED vilkumise kiirust. Kuva info ka Serial
+            Monitoris - Ül 14</h2>
+        <br>
+        <h3 class="text-center mb-4">Tinkercad:</h3>
+        <img src="tinkercad/ul14.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/lzGnNSbROYK/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=FkcVl71fTM3qPCfxm3mFBtEGq3yrAb6oQZxZ9EPazic">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 const int ledPin = 13;
                 const int potPin = A0;
                 int potValue = 0;
@@ -657,15 +678,17 @@
                     delay(blinkDelay);
                 }
             </code></pre>
-            <br>
+        <br>
         <hr>
         <h2 class="text-center mb-4"> - Ül 26</h2>
-            <br>
-            <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/ul26.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/emx0ftlwXd7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=K4fKAz6d_ktyyfLuFCIibaTeVxuLIapddiwL1tcXmAI">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
+        <br>
+        <h3 class="text-center mb-4">Tinkercad:</h3>
+        <img src="tinkercad/ul26.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/emx0ftlwXd7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=K4fKAz6d_ktyyfLuFCIibaTeVxuLIapddiwL1tcXmAI">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
                 #include <ESP8266WiFi.h>  // Kui kasutad ESP8266
                     //#include <WiFi.h>          // Kui kasutad ESP32
                     #include <ESP8266WebServer.h> // Kui kasutad ESP8266
@@ -739,45 +762,89 @@
                       server.handleClient(); 
                     }
             </code></pre>
-            <br>
+        <br>
         <hr>
-        <h2 class="text-center mb-4"> - Ül 25</h2>
-            <br>
-            <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
-                Kood siia
+        <h2 class="text-center mb-4">Arduino mõõdab veetaset ja annab märku LED abil. Kuva info ka Serial Monitoris. -
+            Ül 25</h2>
+        <br>
+        <h3 class="text-center mb-4">Tinkercad:</h3>
+        <img src="tinkercad/ul25.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Tinkercad <a
+                href="https://www.tinkercad.com/things/cMUvXErmPPH/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=buwKw_wFMGgM_phjiPyWilHEQRFY6kNzPhDWrrp9GbI">link</a>
+        </h4>
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
+            int sensorPin = A0;       // Veetasemeandur (potentsiomeeter)
+            int ledPin = 8;           // LED pin
+            int waterLevel = 0;       // Muutuja anduri väärtuseks
+            int threshold = 500;      // Lävi, millest alates LED süttib
+            
+            void setup() {
+              Serial.begin(9600);
+              pinMode(ledPin, OUTPUT);
+              Serial.println("Veetaseme jälgimine alustatud...");
+            }
+            
+            void loop() {
+              waterLevel = analogRead(sensorPin); // Loe veetaseme väärtus
+              Serial.print("Veetase: ");
+              Serial.println(waterLevel);
+            
+              if (waterLevel > threshold) {
+                digitalWrite(ledPin, HIGH); // LED põlema
+                Serial.println("TASE KÕRGE – LED sees");
+              } else {
+                digitalWrite(ledPin, LOW); // LED kustus
+                Serial.println("TASE MADAL – LED väljas");
+              }
+            
+              delay(1000); // Oota 1 sekund
+            }            
             </code></pre>
-            <br>
+        <br>
         <hr>
-        <h2 class="text-center mb-4"> - Ül 24</h2>
-            <br>
-            <h3 class="text-center mb-4">Tinkercad:</h3>
-            <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
-            <h4>Tinkercad <a href="https://www.tinkercad.com/things/5IbajbzmwPj-servo-360-mootor-kontroll-nuppude-abil/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=GFFesAsoP6cztn_tsVbH8kgskfLCHVDDUXkOQOhiHwM">link</a></h4>
-            <h4>Kood:</h4>
-            <pre><code class="language-arduino">
-                Kood siia
+        <h2 class="text-center mb-4">Tutvu lasermooduliga ja pane see tööle, et see teeks midagi (NB! laser kahjustab
+            silma). Kuva info ka Serial Monitoris. - Ül 24</h2>
+        <br>
+        <h3 class="text-center mb-4">Tinkercad:</h3>
+        <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px">
+        <h4>Kood:</h4>
+        <pre><code class="language-arduino">
+                int laserPin = 8; // Laser IN ühendatud D8 külge
+
+                void setup() {
+                Serial.begin(9600);       // Käivita Serial Monitor
+                pinMode(laserPin, OUTPUT);
+                Serial.println("Laser moodul testimiseks valmis.");
+                }
+
+                void loop() {
+                digitalWrite(laserPin, HIGH); // Lülita laser sisse
+                Serial.println("Laser sees!");
+                delay(2000);                  // Hoia sees 2 sekundit
+
+                digitalWrite(laserPin, LOW);  // Lülita laser välja
+                Serial.println("Laser väljas!");
+                delay(2000);                  // Hoia väljas 2 sekundit
+                }
             </code></pre>
-            <br>
-        </div>
+        <br>
+    </div>
     </div>
 
-        <div class="container py-4 text-white">
-            <hr>
-            <h2 class="text-center mb-4">Päris vs Digitaalne võrdlus</h2>
-            <div id="comparisons-container"></div>
-        </div>
-        
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
+    <div class="container py-4 text-white">
+        <hr>
+        <h2 class="text-center mb-4">Päris vs Digitaalne võrdlus</h2>
+        <div id="comparisons-container"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             fetch('comparisons.json')
                 .then(response => response.json())
                 .then(data => {
                     const container = document.getElementById('comparisons-container');
-                    
+
                     data.forEach((item, index) => {
                         const comparisonHTML = `
                             <div class="${item.classes}">
@@ -811,11 +878,13 @@
                 })
                 .catch(error => console.error('Error loading comparisons:', error));
         });
-        </script>
+    </script>
 
 
-    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script><script  src="./script.js"></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+    <script src="./script.js"></script>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
