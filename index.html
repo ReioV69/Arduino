@@ -4,17 +4,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Päris vs Digitaalne võrdlus</title>
+  <title>Keimo Asjade Internet ja robootika</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Keimo Asjade Internet ja robootika</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Koduope">Koduõpe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#9ules">Arduino 9 ülessanet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pvsdv">Päris vs digitaalne</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container py-4 text-white">
-    <h1 class="text-center mb-4">Keimo Asjade Internet ja robootika</h1>
     <hr><br>
 
-    <h2 class="text-center mb-4">Koduõppe nädal Servo 360 mootor kontroll nuppude abil</h2>
+    <h2 id="Koduope" class="text-center mb-4">Koduõppe nädal Servo 360 mootor kontroll nuppude abil</h2>
     <h3 class="text-center mb-4">Tinkercad:</h3>
     <img src="tinkercad/servomotor.png" alt="Tinkercad" class="img-fluid mx-auto d-block" width="600px" />
     <h4>Tinkercad <a
@@ -94,13 +116,13 @@
         href="https://arduinogetstarted.com/tutorials/arduino-button-servo-motor">arduinogetstarted.com</a></h5>
     <h5>Koodi arengu autor: <a href="https://www.keimohub.live">Keimo Plaas ™©</a></h5>
 
-    <h1 class="text-center mb-4">Keimo Plaas Ülesanded: 6, 5, 4, 16, 15, 14, 26, 25, 24</h1>
+    <h1 id="9ules" class="text-center mb-4">Keimo Plaas Ülesanded: 6, 5, 4, 16, 15, 14, 26, 25, 24</h1>
     <hr>
 
     <div id="projects-container" class="container py-4 text-white"></div>
     <br>
     <hr>
-    <h2 class="text-center mb-4">Päris vs Digitaalne võrdlus</h2>
+    <h2 id="pvsdv" class="text-center mb-4">Päris vs Digitaalne võrdlus</h2>
     <div id="comparisons-container"></div>
   </div>
   <script>
@@ -115,7 +137,7 @@
             <h2 class="text-center mb-2">${proj.title}</h2>
             <img src="${proj.image}" class="img-fluid mx-auto d-block mb-2" width="600">
             <h5 class="text-center">
-              Tinkercad <a href="${proj.tinkercadLink}" target="_blank">link</a>
+              Tinkercad <a href="${proj.tinkercad_link}" target="_blank">link</a>
             </h5>
             <div class="accordion" id="accordion-${i}">
               <div class="accordion-item">
